@@ -3,12 +3,12 @@ package com.fivium.sprintretroboard.model;
 import com.fivium.sprintretroboard.enumeration.PostitColour;
 
 public class Postit {
-    PostitColour colour;
-    String owner;
-    String content;
-    boolean read;
+    private PostitColour colour;
+    private Person owner;
+    private String content;
+    private boolean read;
 
-    public Postit(PostitColour colour, String owner, String content, boolean read) {
+    public Postit(PostitColour colour, Person owner, String content, boolean read) {
         this.colour = colour;
         this.owner = owner;
         this.content = content;
@@ -22,11 +22,11 @@ public class Postit {
         this.colour = colour;
     }
 
-    public String getOwner() {
+    public Person getOwner() {
         return owner;
     }
 
-    public void setOwner(String owner) {
+    public void setOwner(Person owner) {
         this.owner = owner;
     }
 
